@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questing">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="389dp"
+                android:layout_height="121dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="32dp">
+
+                <ImageView
+                    android:id="@+id/questDeck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+
+                <LinearLayout
+                    android:layout_width="172dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/questFavName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="questFavName"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/questTotalCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="questTotalCost"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/questTotalAtk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="questTotalAtk"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/questTotalDef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="questTotalDef"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="403dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="186dp">
+
+                <ImageView
+                    android:id="@+id/questDeck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+
+                <ImageView
+                    android:id="@+id/questDeck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+
+                <ImageView
+                    android:id="@+id/questDeck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+
+                <ImageView
+                    android:id="@+id/questDeck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+
+                <ImageView
+                    android:id="@+id/questDeck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/card_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"/>
+
+            <ImageView
+                android:id="@+id/questBasicScene"
+                android:layout_width="488dp"
+                android:layout_height="166dp"
+                android:paddingTop="6dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/quest_basic_scene"
+                tools:layout_editor_absoluteX="-36dp"
+                tools:layout_editor_absoluteY="309dp" />
+
+            <Button
+                android:id="@+id/getExp"
+                android:layout_width="411dp"
+                android:layout_height="48dp"
+                android:text="Start Questing"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Player Data"
+                    android:textAlignment="center"
+                    android:textSize="33sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="128dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="coins"
+                            android:textAlignment="center"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="8dp"
+                                android:layout_height="21dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/gold_coins_pic" />
+
+                            <TextView
+                                android:id="@+id/qCoins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="coins" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="142dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EXP"
+                            android:textAlignment="center"
+                            />
+
+                        <ProgressBar
+                            android:id="@+id/qProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="level"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/qLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="lvl"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="cardCount"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/qCardCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="cards"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <ImageView
+            android:id="@+id/menuHome"
+            android:layout_width="78dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_home" />
+
+        <ImageView
+            android:id="@+id/menuDeck"
+            android:layout_width="71dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_card" />
+
+        <ImageView
+            android:id="@+id/menuQuest"
+            android:layout_width="72dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_quest" />
+
+        <ImageView
+            android:id="@+id/menuMis"
+            android:layout_width="76dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_mis" />
+
+        <ImageView
+            android:id="@+id/menuOptions"
+            android:layout_width="69dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_scroll" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

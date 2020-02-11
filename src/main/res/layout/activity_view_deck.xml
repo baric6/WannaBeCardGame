@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDeck">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="407dp"
+        android:layout_height="493dp"
+
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="78dp"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deckSum" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="397dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/deck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/card_back" />
+
+        <ImageView
+            android:id="@+id/deck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/card_back" />
+
+        <ImageView
+            android:id="@+id/deck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/card_back" />
+
+        <ImageView
+            android:id="@+id/deck4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/card_back" />
+
+        <ImageView
+            android:id="@+id/deck5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/card_back" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playerCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/deckSum"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteDec"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="3dp"
+        android:text="clear Deck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deckSum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deckSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/deleteDec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="416dp"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+        <ImageView
+            android:id="@+id/menuHome"
+            android:layout_width="78dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_home" />
+
+        <ImageView
+            android:id="@+id/menuDeck"
+            android:layout_width="71dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_card" />
+
+        <ImageView
+            android:id="@+id/menuQuest"
+            android:layout_width="72dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_quest" />
+
+        <ImageView
+            android:id="@+id/menuMis"
+            android:layout_width="76dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_mis" />
+
+        <ImageView
+            android:id="@+id/menuOptions"
+            android:layout_width="69dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_menu_scroll" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
