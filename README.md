@@ -1,5 +1,6 @@
 # WannaBeCardGame
-A Fantasy card game made in android studio. Make your own team and Quest with your team
+BY BARIC
+# A Fantasy card game made in android studio. Make your own team and Quest with your team
 <img src = "screenShots/Screen Shot 2020-02-10 at 8.46.12 PM.png">
 <img src = "screenShots/Screen Shot 2020-02-10 at 8.44.14 PM.png">
 <img src = "screenShots/Screen Shot 2020-02-10 at 8.45.56 PM.png">
